@@ -52,7 +52,7 @@ function countriesCardRender(data) {
 
 function renderCountry(data) {
   const countryData = data.map(element => {
-    return `<div><img src = "${element.flags.svg}" width = "50"><div width = "100">${element.name}</div></div>`;
+    return `<div><img src = "${element.flags.svg}" width = "50"><div>${element.name}</div></div>`;
   });
   countryListEl.insertAdjacentHTML('beforeend', countryData.join(''));
 }
